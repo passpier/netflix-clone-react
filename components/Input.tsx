@@ -40,7 +40,7 @@ const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
         text-zinc-400
         duration-150
         transform
-        -traslate-y-3
+        -translate-y-3
         scale-75
         top-4
         z-10
