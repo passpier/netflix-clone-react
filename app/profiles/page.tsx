@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 import serverAuth from "@/libs/serverAuth";
-import WelcomeAvatar from "@/app/auth/welcomeAvatar";
+import WelcomeAvatar from "@/app/profiles/welcomeAvatar";
 
 export default async function Profiles() {
   const session = await getServerSession(authOptions);

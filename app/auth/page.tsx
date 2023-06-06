@@ -6,6 +6,7 @@ import { useCallback, useState } from "react";
 import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const Auth = () => {
   const [email, setEmail] = useState("");
@@ -24,7 +25,6 @@ const Auth = () => {
       await signIn("credentials", {
         email,
         password,
-        redirect: false,
         callbackUrl: "/profiles",
       });
     } catch (e) {
