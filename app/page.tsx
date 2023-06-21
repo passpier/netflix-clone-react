@@ -7,6 +7,8 @@ import MovieList from "@/components/MovieList";
 import prismadb from "@/libs/prismadb";
 import serverAuth from "@/libs/serverAuth";
 import MyList from "@/components/MyList";
+import InfoModal from "@/components/InfoModal";
+import HomeInfoModal from "@/components/HomeInfoModal";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
@@ -17,6 +19,7 @@ export default async function Home() {
 
   return (
     <>
+      <HomeInfoModal />
       <Navbar />
       <BillBoard />
       <div className="pb-40">
