@@ -1,5 +1,9 @@
 # Netflix Clone(Next.js, Prisma, MongoDB, NextAuth)
 
+Google and GitHub social login in Nextjs using NextAuth
+
+<img src="doc/netflix-login.png" style="max-width: 100%;">
+
 ## Getting Started
 
 First, run the development server:
